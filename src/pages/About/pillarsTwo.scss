@@ -1,0 +1,147 @@
+// *{font-family:'Princess Sofia', cursive;}
+.fontPrince{
+    font-family:'Princess Sofia', cursive;
+}
+// .backImage_pillars{
+//     position:absolute;
+//     content:' ';
+//     left:0;top:0;
+//     width:100%;height:100vh;
+//     // mix-blend-mode:overlay;
+//     background-image:url('../../assets/images/gettyimages-1178181575-640x640.jpg');
+//     background-repeat:round;
+//     background-color:#010217;
+//     // background-blend-mode:lighten;
+//     background-size:100% auto;
+//     /* background-image: ; */
+//     background-position:top center;
+// }
+.pillar_header_section{
+    width: auto;
+    display: flex;
+    font-size: 5.5vw;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.pillar_Line{
+    // width: 100%;
+    height: 10px;
+    height: 1px;
+    background-color: white;margin: 5px 10px 1px;
+}
+.pillar_Lines{
+    margin-bottom: 5px;
+    width: 70%;
+    height: auto;
+    // background-color: aquamarine;
+    display: flex;
+    
+    justify-content: end;
+    flex-direction: column;
+}
+.pillar_Lines_two{
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    // background-color: aquamarine;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+.img_size_pillar {
+    // width: 280px;
+padding: 20px 20px;
+display: flex;
+justify-content: space-evenly;
+}
+.name_positioning{
+    position: relative
+}
+.img_size_pillar img{
+    height: 450px;
+ width: 280px;
+    object-fit: cover; 
+border-radius: 20px;
+}
+.name_position img{
+    position: absolute;
+    width: 150px;
+    height: auto;
+    bottom: 20px;
+    left: 20px;
+}
+@media (max-width:800px) {
+    .fontPrince{
+        font-family:'Princess Sofia', cursive;
+    }
+    // .backImage_pillars{
+    //     position:absolute;
+    //     content:' ';
+    //     left:0;top:0;
+    //     width:100%;height:100vh;
+    //     // mix-blend-mode:overlay;
+    //     background-image:url('../../assets/images/gettyimages-1178181575-640x640.jpg');
+    //     background-repeat:round;
+    //     background-color:#010217;
+    //     // background-blend-mode:lighten;
+    //     background-size:100% auto;
+    //     /* background-image: ; */
+    //     background-position:top center;
+    // }
+    .pillar_header_section{
+        width: auto;
+        display: flex;
+        font-size: 5.5vw;
+        flex-direction: row;
+        margin-top: 50px;
+        justify-content: space-between;
+    }
+    .pillar_Line{
+        // width: 100%;
+        height: 10px;
+        height: 1px;
+        background-color: white;margin: 5px 10px 1px;
+    }
+    .pillar_Lines{
+        margin-bottom: 5px;
+        width: 70%;
+        height: auto;
+        // background-color: aquamarine;
+        display: flex;
+        
+        justify-content: end;
+        flex-direction: column;
+    }
+    .pillar_Lines_two{
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+        // background-color: aquamarine;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+    }
+    .img_size_pillar {
+        // width: 280px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    }
+    .name_positioning{
+        position: relative
+    }
+    .img_size_pillar img{
+        height: 450px;
+     width: 280px;
+        object-fit: cover; 
+    border-radius: 20px;
+    }
+    .name_position img{
+        position: absolute;
+        width: 150px;
+        height: auto;
+        bottom: 20px;
+        left: 20px;
+    }
+}

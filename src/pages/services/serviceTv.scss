@@ -1,0 +1,131 @@
+.col-sm-6,.col-sm-4,.col-sm-8{
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../../assets/images/service\ back.png");
+    background-size: 100% 100%;
+    // border: solid black 2px;
+    margin: 0 !important;
+    padding: 20px;
+    height: 50vh;
+    
+}
+.tvLogo-align{
+    display: flex;
+    flex-direction: row;
+}
+@media (max-height:566px) {
+    .col-sm-6,.col-sm-4,.col-sm-8{
+        height: auto;
+        font-family: 'Poppins', sans-serif;
+        background-image: url("../../assets/images/service\ back.png");
+        background-size: 100% 100%;
+        // border: solid black 2px;
+        margin: 0 !important;
+        padding: 20px;
+        height: none;
+        
+    }
+}
+.underline-tv-head{
+    width: 70%;
+    height: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    background-color: #FFD500;
+}
+.tv-text-button{
+    margin-top: 10px;
+    display: flex;
+flex-direction: row;
+align-items: center;
+font-size: medium;
+justify-content: space-evenly;
+}
+.tv-service-details{
+    padding: 0px 40px;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+.tv-service-logo>img{
+    width: 60%;
+    height: auto;
+   
+}
+.tv-service-name{
+    margin-top: 25px;
+    font-size: x-large;
+}
+.tv-button-icon{
+    margin-left: 10px;
+    // background-image: url('../../assets/images/tv-section/button-icon.png');
+
+}
+.tv-service-content{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tv-1{
+    background-color: #370F93;
+}
+.tv-2{background-color: #0F5193;}
+.tv-3{
+    background-color: #0F6A93;
+}
+.tv-4{background-color: #0F936F;}
+.tv-5{background-color: #4D930F;}
+.tv-6{background-color: #0F9381;}
+.align-center-tv{
+   height: 100vh;
+    display: flex;
+align-items: center;
+justify-content: center;
+// padding-left: 0 !important;
+// padding-right: 0 !important;
+// padding-top: 20px !important;
+// padding-bottom: 20px !important;
+
+padding: 0 !important;
+
+}
+.container-fluid{
+    // background-color: aqua;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // width: 50px;
+    
+}
+.section-tv{
+    font-size:120%;
+    display:block;
+    position:relative;
+    width:100vw; 
+    max-width: 100%; /*a must with 100vw to avoid extra horizontal padding*/
+    // height:100vh;
+    max-height:100%;
+    overflow: hidden;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    }
+    .section-tv>div{
+        padding:10vmax;
+        position:relative;
+        width:100%;height:100%;
+        }
+        .section-tv2{
+            // font-size:120%;
+            display:block;
+            position:relative;
+            
+            /*a must with 100vw to avoid extra horizontal padding*/
+            height:100vh;
+            // max-height:100%;
+            // overflow: hidden;
+            width: 100%;
+            
+            }

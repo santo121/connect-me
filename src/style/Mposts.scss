@@ -1,0 +1,85 @@
+@import './main.scss';
+
+.mpost-div
+{
+    position: relative;
+    padding: 12px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+    font-family: 'Nunito', sans-serif !important;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-card-post
+{
+    object-fit: contain;
+    height: 300px;
+    width: -webkit-fill-available;
+    border-radius: 10px!important;
+    border: solid 2px rgb(230, 227, 227);
+}
+
+.mpost-div .inner-div h1{
+    font-size: 18px;
+    padding: 10px;
+    color: rgb(146, 86, 86);
+}
+
+.mpost-div .inner-div p{
+    text-align: justify;
+    // padding: 15px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.mpost-div .inner-div
+{
+    flex: 1 1 auto;
+    padding: 20px 20px 0 20px;
+}
+
+.mpost-div .months
+{
+   
+    padding: 0 20px 20px 20px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.months button
+{
+    position: absolute;
+    right: 18px;
+    bottom: 20px;
+    width:200px;
+}
+
+.btnstyle
+{
+    font-style: italic;
+    font-size: 15px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.align-center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:850px){
+    .months button
+    {
+        position: relative;
+        right: 0px;
+        top:15px;
+        bottom: 0px;
+        width: 100%;
+    }
+}
