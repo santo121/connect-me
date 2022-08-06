@@ -130,8 +130,9 @@ $(document).ready(function(){
 		console.log('in');
 	}
 
-	$("#section-nav li:not([data-section=login])").click(function(){
+	$("#section-nav li:not([data-section=login])").click(function(e){
 		console.log("mainscreen-menuitem-clicked");
+		e.preventDefault();
 		var section=$(this).attr("data-section");
 		if (section === 'login')
 		{
@@ -139,26 +140,22 @@ $(document).ready(function(){
 		}
 		$("body,html").removeClass("freeze");
 		
-		// $('body,html').animate({
-		// 	scrollTop: $("#"+section).offset().top
-		// });
-		// $("#"+section).animate({
-		// 	"top": $("#"+section).offset().top.toString() + "px"
-		// });
-
+		//close mobile menu
 		window.location.hash = section;
+		//scrollIntoView();
+		$('#nav-icon').removeClass("open");
+		$("#section-nav").removeClass("open");
 
-		scrollIntoView (document.querySelector("#"+section),{
+		$('html').animate({ scrollTop: $("#"+section).offset().top }); 
+    		$('body').animate({ scrollTop: $("#"+section).offset().top }); 
+    		$('document').animate({ scrollTop: $("#"+section).offset().top }); 
+    		$('window').animate({ scrollTop: $("#"+section).offset().top }); 
+		
+		/*scrollIntoView (document.querySelector("#"+section),{
 			behavior: "smooth",
 			block: "center",
 			inline: "center",
-		});
-		
-		//alert($("#"+section).offset().top);
-		
-		//close mobile menu
-		$('#nav-icon').removeClass("open");
-		$("#section-nav").removeClass("open");
+		});*/
 	});
 
 	$('#nav-icon').click(function(){
