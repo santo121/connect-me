@@ -146,10 +146,9 @@ $(document).ready(function(){
 		$('#nav-icon').removeClass("open");
 		$("#section-nav").removeClass("open");
 
-		$('html').animate({ scrollTop: $("#"+section).offset().top }); 
-    		$('body').animate({ scrollTop: $("#"+section).offset().top }); 
-    		$('document').animate({ scrollTop: $("#"+section).offset().top }); 
-    		$('window').animate({ scrollTop: $("#"+section).offset().top }); 
+		$('html,body').css('scroll-snap-type','none').animate({ top: $("#"+section).offset().top },
+			{complete:function(){$(this).css('scroll-snap-type','y mandatory');}}
+		); 
 		
 		/*scrollIntoView (document.querySelector("#"+section),{
 			behavior: "smooth",
@@ -173,15 +172,10 @@ $("#pillars li").click(function(){
   var i=$(this).index()+1;
   $("#pillars .subtitle").removeClass("active");
   $("#pillar"+i).addClass("active");
+  $("html,body").addClass("freeze");
 });
-$("#pillars .subtitle i").click(function(){
-  $(this).parent().removeClass("active");
-});
-
-
 
 // why-connect
-
 
 function graphRepaint(){
   var availableWidth=$("#graph-container").width();
@@ -227,13 +221,16 @@ $("#service-list li").click(function(){
   console.log(i);
   $("#service-list .subtitle").removeClass("active");
   $("#service"+i).addClass("active");
+  $("html,body").addClass("freeze");
 });
 $(".popup .subtitle i").click(function(){
   $(this).parent().removeClass("active");
+  $("html,body").removeClass("freeze");
 });
 $(document).on('keydown', function(event) {
    if (event.key === "Escape") {
      $(".popup .subtitle i").parent().removeClass("active");
+     $("html,body").removeClass("freeze");
    }
  });
 $("#socials li").click(function(){
@@ -241,6 +238,7 @@ $("#socials li").click(function(){
   // console.log(i);
   $("#socials .subtitle").removeClass("active");
   $("#social"+i).addClass("active");
+  $("html,body").addClass("freeze");
 });
 
 
